@@ -19,4 +19,6 @@ RUN adduser \
 RUN chown -R django-user:django-user /files/media/
 RUN chmod -R 755 /files/media/
 
+USER django-user
+
 COPY . .
